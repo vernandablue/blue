@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#e8f2fc">
+  <meta name="description" content="Sepucuk surat kecil, untuk seseorang yang begitu berarti. ♡">
+  <title>Untuk Kamu, Selalu ♡</title>
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='18' fill='%23e8f2fc'/%3E%3Ctext x='32' y='47' text-anchor='middle' font-size='48' fill='%234368a0'%3E%E2%99%A1%3C/text%3E%3C/svg%3E">
+  <link rel="stylesheet" href="./style.css">
+  <script src="./index.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#surat">Langsung ke surat</a>
+  <div class="read-progress" aria-hidden="true"><span id="read-progress"></span></div>
+  <header class="site-header">
+    <a class="wordmark" href="#home" aria-label="Kembali ke awal">blue<span>♡</span></a>
+    <span class="header-note">a little love, just for you</span>
+    <button class="music-toggle" id="music-toggle" type="button" aria-pressed="false" aria-label="Putar musik">
+      <span class="music-bars" aria-hidden="true"><i></i><i></i><i></i></span>
+      <span id="music-label">Putar lagu</span>
+    </button>
+  </header>
+  <main>
+    <section class="hero section-wrap" id="home" aria-labelledby="hero-title">
+      <div class="hero-copy">
+        <p class="eyebrow"><span class="tiny-star">✦</span> KHUSUS UNTUK ORANG FAVORITKU</p>
+        <h1 id="hero-title">Dari semua hal,<br>aku memilih<br><em>kamu.</em><span class="title-heart" aria-hidden="true">♡</span></h1>
+        <p class="hero-description">Hai, kamu. Ada yang ingin kusampaikan.<br>Pelan-pelan saja, ya. Kita punya waktu.</p>
+        <a class="button primary" href="#amplop">Ada surat buat kamu <span aria-hidden="true">↗</span></a>
+        <p class="small-note">boleh sambil putar lagu di atas, kalau kamu mau ♪</p>
+      </div>
+      <div class="hero-scrapbook" aria-label="Dua bingkai untuk orang tersayang">
+        <span class="orbit-heart" aria-hidden="true">♡</span>
+        <figure class="polaroid hero-photo back-photo">
+          <div class="photo-slot"><span class="photo-placeholder" aria-hidden="true">♡<small>my favorite person</small></span><img class="personal-photo" src="./pict/2.jpeg" alt="Foto kedua orang tersayang" width="600" height="750"></div>
+          <figcaption>my kind of happy.</figcaption>
+        </figure>
+        <figure class="polaroid hero-photo front-photo">
+          <span class="tape" aria-hidden="true"></span>
+          <div class="photo-slot"><span class="photo-placeholder" aria-hidden="true">♡<small>a little piece of you</small></span><img class="personal-photo" src="./pict/1.jpeg" alt="Foto pertama orang tersayang" width="600" height="750"></div>
+          <figcaption>kamu, lagi. kamu, selalu.</figcaption>
+        </figure>
+        <img class="sticker hero-sticker" src="./sticker/1.png" alt="" width="170" height="170">
+        <span class="scrapbook-note">my favorite<br>human ↗</span>
+        <span class="scrap-star" aria-hidden="true">✧</span>
+      </div>
+      <a class="scroll-note" href="#amplop">ada banyak sayang di bawah sini <span aria-hidden="true">↓</span></a>
+    </section>
+
+    <section class="envelope-section section-wrap" id="amplop" aria-labelledby="envelope-title">
+      <p class="eyebrow">01 / SEPUCUK PERASAAN</p>
+      <h2 id="envelope-title">Ada yang kusimpan.<br><em>Sekarang, untukmu.</em></h2>
+      <p class="section-intro">Bukan surat yang sempurna. Cuma perasaan yang sungguh-sungguh.</p>
+      <div class="envelope-stage">
+        <img class="sticker envelope-sticker left" src="./sticker/7.png" alt="" width="150" height="150" loading="lazy">
+        <button class="envelope" id="open-letter" type="button" aria-expanded="false" aria-controls="letter-content" aria-label="Buka surat untuk kamu">
+          <span class="envelope-paper"><span>dear, kamu.</span><span>ada sedikit cerita<br>& banyak rasa ♡</span></span>
+          <span class="envelope-back"></span><span class="envelope-flap"></span><span class="envelope-front"></span>
+          <span class="envelope-seal">♡</span>
+          <span class="envelope-address">untuk: kamu<br>dari: seseorang yang memilihmu</span>
+        </button>
+        <img class="sticker envelope-sticker right" src="./sticker/11.png" alt="" width="150" height="150" loading="lazy">
+      </div>
+      <p class="handwritten envelope-hint" id="envelope-hint">ketuk amplopnya, ya ♡</p>
+    </section>
+
+    <section class="letter-section section-wrap" id="surat" aria-label="Surat untuk kamu">
+      <div id="letter-content" hidden>
+        <div class="letter-heading"><p class="eyebrow">TUJUH HALAMAN, SATU PERASAAN</p><span class="handwritten">dibaca pelan-pelan, ya.</span></div>
+        <div class="letter-book" id="letter-book">
+          <div class="letter-visual">
+            <figure class="polaroid letter-polaroid"><span class="tape" aria-hidden="true"></span><div class="photo-slot"><span class="photo-placeholder" aria-hidden="true">♡<small>my favorite view</small></span><img class="personal-photo" id="chapter-photo" src="./pict/1.jpeg" alt="Foto orang tersayang" width="600" height="750" loading="lazy"></div><figcaption id="chapter-caption">semua bermula dari kamu.</figcaption></figure>
+            <img class="sticker chapter-sticker" id="chapter-sticker" src="./sticker/2.png" alt="" width="160" height="160" loading="lazy">
+          </div>
+          <article class="letter-copy" id="chapter" tabindex="-1" aria-labelledby="chapter-title">
+            <p class="chapter-number" id="chapter-number">HALAMAN 01 / 07</p>
+            <h2 id="chapter-title"></h2>
+            <div id="chapter-text"></div>
+            <span class="letter-signature handwritten">dengan semua rasa, aku.</span>
+          </article>
+        </div>
+        <div class="letter-navigation"><button class="round-button" id="prev-chapter" type="button" aria-label="Halaman surat sebelumnya">←</button><div class="chapter-dots" id="chapter-dots" role="group" aria-label="Pilih halaman surat"></div><button class="round-button" id="next-chapter" type="button" aria-label="Halaman surat berikutnya">→</button></div>
+        <p class="swipe-hint">geser kiri–kanan atau gunakan tombol panah</p>
+        <p class="sr-only" id="chapter-status" role="status"></p>
+      </div>
+      <noscript><div class="noscript-note">Aktifkan JavaScript untuk membuka surat dan kejutan kecilnya. Aku memilihmu, hari ini dan hari-hari setelahnya. ♡</div></noscript>
+    </section>
+
+    <div class="love-divider" aria-hidden="true"><span>kamu itu rumah</span><span>✧</span><span>my favorite person</span><span>♡</span><span>selalu, kamu</span><span>✧</span></div>
+
+    <section class="gallery-section section-wrap" id="kenangan" aria-labelledby="gallery-title">
+      <div class="section-heading"><div><p class="eyebrow">02 / HAL-HAL YANG INGIN KUSIMPAN</p><h2 id="gallery-title">Kalau bahagia<br><em>punya wajah.</em></h2></div><p>Barangkali, bentuknya seperti kamu.<br>Dan semua hal kecil tentangmu.</p></div>
+      <div class="photo-grid" id="photo-grid"></div>
+      <p class="small-note centered">ketuk fotonya untuk melihat lebih dekat ♡</p>
+    </section>
+
+    <section class="pocket-section section-wrap" aria-labelledby="pocket-title">
+      <p class="eyebrow">03 / DISIMPAN UNTUK NANTI</p>
+      <h2 id="pocket-title">Sedikit sayang,<br><em>untuk setiap harimu.</em></h2>
+      <p class="section-intro">Pilih satu. Ada pesan kecil yang menunggumu di dalamnya.</p>
+      <div class="pocket-grid">
+        <button class="pocket" type="button" data-note="0" aria-haspopup="dialog"><img class="sticker" src="./sticker/15.png" alt="" width="140" height="140" loading="lazy"><span class="pocket-title">Saat kamu bahagia</span><span class="pocket-subtitle">aku mau ikut tersenyum ↗</span><span class="pocket-heart" aria-hidden="true">♡</span></button>
+        <button class="pocket" type="button" data-note="1" aria-haspopup="dialog"><img class="sticker" src="./sticker/17.png" alt="" width="140" height="140" loading="lazy"><span class="pocket-title">Saat harimu berat</span><span class="pocket-subtitle">sini, istirahat sebentar ↗</span><span class="pocket-heart" aria-hidden="true">♡</span></button>
+        <button class="pocket" type="button" data-note="2" aria-haspopup="dialog"><img class="sticker" src="./sticker/13.png" alt="" width="140" height="140" loading="lazy"><span class="pocket-title">Saat kamu kangen</span><span class="pocket-subtitle">ada peluk kecil buatmu ↗</span><span class="pocket-heart" aria-hidden="true">♡</span></button>
+      </div>
+    </section>
+
+    <section class="final-section section-wrap" aria-labelledby="final-title">
+      <span class="final-orbit" aria-hidden="true">♡</span>
+      <img class="sticker final-sticker" src="./sticker/14.png" alt="" width="200" height="170" loading="lazy">
+      <p class="eyebrow">DI UJUNG CERITA INI</p>
+      <h2 id="final-title">Kamu.<br><em>Cuma kamu.</em></h2>
+      <p>Aku tidak tahu semua yang menanti kita nanti.<br>Tapi aku tahu dengan siapa aku ingin menjalaninya.</p>
+      <p class="special-message">sayang a bank banyak banyakkk,<br>sebanyak yang kamuu mau</p>
+      <button class="button primary hug-button" id="send-hug" type="button">Sini, peluk dulu <span aria-hidden="true">♡</span></button>
+      <p id="hug-message" class="hug-message" role="status">satu klik, satu peluk kecil dariku.</p>
+      <p class="handwritten final-thanks">Terima kasih sudah jadi satu-satunya.</p>
+    </section>
+  </main>
+  <footer><a class="wordmark" href="#home">blue<span>♡</span></a><p>dibuat dengan banyak rasa, khusus buat kamu.</p><a href="#home">baca dari awal ↑</a></footer>
+  <audio id="backsound" src="./backsound.mp3" preload="none" loop></audio>
+  <div class="toast" id="toast" role="status" hidden></div>
+  <div id="heart-rain" aria-hidden="true"></div>
+  <dialog id="photo-dialog" class="photo-dialog" aria-label="Foto kenangan"><button class="dialog-close" type="button" data-close aria-label="Tutup foto">×</button><div class="lightbox-image"><img id="lightbox-photo" alt=""></div><div class="lightbox-bottom"><button class="round-button" id="prev-photo" type="button" aria-label="Foto sebelumnya">←</button><p id="lightbox-caption"></p><button class="round-button" id="next-photo" type="button" aria-label="Foto berikutnya">→</button></div></dialog>
+  <dialog id="note-dialog" class="note-dialog" aria-labelledby="note-title"><button class="dialog-close" type="button" data-close aria-label="Tutup pesan">×</button><img class="sticker" id="note-sticker" src="./sticker/15.png" alt="" width="160" height="160"><p class="eyebrow">PESAN KECIL DARI AKU</p><h2 id="note-title"></h2><p id="note-body"></p><span class="handwritten">kamu selalu punya aku. ♡</span></dialog>
+</body>
+</html>
